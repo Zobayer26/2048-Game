@@ -12,7 +12,7 @@ const App = () => {
   ])
   const [score, setScore] = useState(0)
   const [gameOver, setGameOver] = useState(false);
-  const [update, setupdate] = useState(0)
+  const [update, setupdate] = useState(localStorage.getItem("key")||0)
   const startGame = () => {
     let newGrid = JSON.parse(JSON.stringify(data));
     addNumber(newGrid)
@@ -351,6 +351,8 @@ const App = () => {
     addNumber(emptyBox)
     setData(emptyBox)
     setScore(0)
+    setupdate(localStorage.getItem("key"))
+
   }
 
 
@@ -363,6 +365,7 @@ const App = () => {
     if (score > update) {
       setupdate(score)
     }
+    localStorage.setItem("key", update)
   }
 
   useEffect(() => {
@@ -464,7 +467,7 @@ const App = () => {
               </div>
               <div className="bst">
                 <p>Best </p>
-                <p>{update}</p>
+                <p>{localStorage.getItem("key")}</p>
               </div>
             </div>
 
@@ -488,13 +491,13 @@ const App = () => {
           </p>
           <a href="#"></a>
           <button>
-          Contact
+            Contact
           </button>
-         <div className='contact'>
-         <a href="https://www.facebook.com/zobayerhossain.arif.35/"><img type="svg" src="../public/facebook.jpg" alt="Facebook"/></a>
-         <a href="https://github.com/Zobayer26"><img src="../public/github.jpg" alt="Github"/></a>
-         <a href="https://www.linkedin.com/in/md-zobayer-hossain-899921220/"> <img src="../public/linkedin.jpg"  alt="Linkedin" /> </a>
-         </div>
+          <div className='contact'>
+            <a href="https://www.facebook.com/zobayerhossain.arif.35/"><img type="svg" src="../public/facebook.jpg" alt="Facebook" /></a>
+            <a href="https://github.com/Zobayer26"><img src="../public/github.jpg" alt="Github" /></a>
+            <a href="https://www.linkedin.com/in/md-zobayer-hossain-899921220/"> <img src="../public/linkedin.jpg" alt="Linkedin" /> </a>
+          </div>
         </div>
       </div>
 
