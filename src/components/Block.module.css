@@ -1,0 +1,13 @@
+.block{
+   height: 106px;
+   width: 106px;
+   background:rgba(238,228,218,.35);
+   font-size: 45px;
+   font-weight: 800;
+   color:#fff;
+   margin:8px;
+   border-radius: 3px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

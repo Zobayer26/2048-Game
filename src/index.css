@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.mobo {
+  position: absolute;
+  margin-top: 670px;
+  display: none;
+}
+
+.rsp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.rsp .left {
+  display: flex;
+  gap: 60px;
+}
+
+@media (max-width: 600px) {
+  .mobo {
+    width: 400px;
+    height: 400px;
+
+    gap: 20px;
+    display: block;
+
+  }
+
+  .btn {
+    width: 80px;
+    padding: 5px 10px;
+
+  }
+
+  .last {
+    margin-top: 130px;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+}
+
+.main .container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.gameOver {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  margin-top: 400px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 80px;
+  color: #776e65;
+  font-weight: 700;
+}
+
+.second {
+  display: flex;
+}
+
+.second .clr {
+  font-weight: 700;
+  color: #776e65;
+}
+
+.score {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.score .scr {
+  padding: 3px 25px;
+  border-radius: 5px;
+  background-color: #776e65;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score .bst {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(171, 171, 243);
+  padding: 3px 40px;
+  border-radius: 5px;
+  background-color: #776e65;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #8f7a66;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+}
+
+.last {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.last p {
+  color: #776e65;
+}
+.contact{
+   display: flex;
+    gap:20px;
+}
+.contact img{
+  width:40px;
+}
